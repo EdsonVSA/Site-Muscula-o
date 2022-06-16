@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musculação</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/icons/icon_short.png" type="image/x-icon">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                // captions: true,
+                //slidWidht: 300,
+                auto: true,
+                pager: true,
+                // speed: 100,
+                // controls: true,
+            });
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="imagem-topo">
+        <img src="imagens/logo_physical_fitness.png" id="logo">
+    </div>
+    <header id="cabecalho">
+        <nav id="menu">
+            <ul>
+
+                <li><img src="imagens/icons/icon_home.png"><a href="#" class="">INÍCIO</a></img></li>
+                <!-- /* _parent: abre a página na mesma janela do link; */ -->
+
+                <li><img src="imagens/icons/icon_calistenia.png"><a href="internas/calistenia.html" class=""
+                        target="_parent">Calistenia</a></li>
+
+                <li><img src="imagens/icons/icon_crossfit.png"><a href="internas/crossfit.html" class=""
+                        target="_parent">Crossfit</a></li>
+
+                <li><img src="imagens/icons/icon_treinos.png"><a href="internas/treinos.html" class=""
+                        target="_parent">Treinos</a></li>
+
+                <li> <img src="imagens/icons/icon_alimentacao.png"><a href="internas/alimentacao.html" class=""
+                        target="_parent">Alimentação</a></li>
+
+                <li><img src="imagens/icons/icon_contato.png"><a href="internas/faleconosco.html" class=""
+                        target="_parent">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="fundo-preto">
+        <section id="banners">
+            <div class="container">
+                <ul class="slider">
+                    <li><img src="imagens/banners/banner_musculacao/banner1_musculacao.jpg"></li>
+                    <li><img src="imagens/banners/banner_musculacao/banner2_musculacao.jpg"></li>
+                    <li><img src="imagens/banners/banner_musculacao/banner3_musculacao.jpg"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="conteudo">
+            <h2>Musculação: como começar e 7 principais benefícios</h2>
+            <p>A musculação é um tipo de atividade física de força em que são utilizados equipamentos, como barras,
+                polias e halteres, por exemplo, com o objetivo de promover o desenvolvimento do músculos, o que tem
+                como
+                consequência melhora do condicionamento físico, maior resistência muscular, aceleração do
+                metabolismo e
+                diminuição da gordura acumulada no corpo.</p>
+
+            <p>Apesar da musculação ser frequentemente associada a benefícios estéticos, como perda de peso e ganho
+                de
+                massa muscular, esse tipo de atividade também é capaz de promover a sensação de bem-estar, podendo
+                ser
+                considerado um aliado no tratamento do estresse, ansiedade e depressão, por exemplo.</p>
+
+            <p>Para que seja possível alcançar o máximo de benefícios, é importante que antes de iniciar a prática
+                da
+                musculação, seja realizado uma avaliação física e de saúde, além de ser também indicado que os
+                primeiros
+                treinos sejam feitos sob orientação de um profissional de educação física, para garantir que os
+                movimentos estão sendo realizados corretamente e seja possível prevenir lesões.</p>
+            <h2>Como começar</h2>
+            <p>Antes de começar a praticar a musculação, é importante que sejam feitos exames que avaliem a saúde do
+                coração, principalmente no caso das pessoas sedentárias e/ ou que possuem doenças cardíaca. Dessa
+                forma,
+                o médico poderá indicar se a prática de musculação é segura e qual a intensidade mais adequada.</p>
+
+            <p>Além disso, antes de iniciar a prática desse tipo de atividade, é normalmente realizada uma avaliação
+                física, que tem como objetivo avaliar a composição corporal da pessoa e verificar o seu nível de
+                força,
+                flexibilidade e capacidade cardiorrespiratória. Assim, o profissional de educação física consegue
+                indicar treinos que ajudem a atingir o objetivo da pessoa, seja ele emagrecer, ganhar massa muscular
+                ou
+                ganhar mais resistência, por exemplo.</p>
+
+            <p>É importante que os primeiros treinos sejam feitos com auxílio de um profissional de educação física,
+                principalmente quando se é iniciante nesse tipo de atividade, pois assim é possível aprender os
+                movimentos e diminuir o risco de lesões.</p>
+
+            <p>De forma geral, para os iniciantes na musculação é indicado que sejam realizados 2 a 3 treinos por
+                semana, com um intervalo de 1 dia entre os dias de treino para favorecer a recuperação muscular. No
+                caso
+                das pessoas no nível intermediário e avançado, a frequência na semana pode ser maior, assim como a
+                intensidade do treino.</p>
+
+            <p>Para garantir os resultados, além de manter a frequência da atividade física, é recomendado que se
+                tenha
+                o acompanhamento de um nutricionista, que deve também indicar um plano alimentar saudável,
+                equilibrado e
+                de acordo com o objetivo da pessoa. Além disso, é importante dormir bem, beber bastante água e dar
+                algum
+                tempo para o organismo descansar.</p>
+
+            <h2>Benefícios da musculação</h2>
+            <p>A musculação pode trazer diversos benefícios para a saúde, desde que praticada com regularidade e sob
+                orientação de um profissional:</p>
+            <h2>1. Melhora a postura corporal</h2>
+            <p>A prática de musculação fortalece a musculatura que sustenta a coluna, melhorando a postura e
+                diminuindo
+                as dores nas costas por exemplo.</p>
+            <h2>2. Diminui a quantidade de gordura</h2>
+            <p>Quando a musculação é praticada de forma regular, intensa e acompanhada de uma alimentação saudável,
+                o
+                corpo passa a queimar mais gordura e aumentar a massa muscular, acelerando o metabolismo e
+                favorecendo o
+                gasto calórico mesmo quando se está parado.</p>
+
+            <p>A perda de gordura, além de promover benefícios estéticos e aumentar a auto-estima, previne uma série
+                de
+                doenças, como obesidade e aterosclerose, por exemplo.</p>
+
+            <h2>3. Tonifica os músculos</h2>
+            <p>A tonificação dos músculos é uma das "consequências" visíveis da prática da musculação. A tonificação
+                acontece devido à perda de gordura, aumento da massa muscular e fortalecimento da musculatura o que
+                além
+                de representar ganho de força, permite que haja o desaparecimento das celulites, por exemplo.
+
+            <p>No entanto, para que os músculos fiquem mais durinhos, é preciso ter uma hidratação correta e
+                alimentação balanceada. Veja o que comer para ganhar massa muscular.</p>
+            <h2>4. Combate problemas emocionais</h2>
+            <p>Por promover a liberação da endorfina, que é o hormônio responsável pela sensação de bem-estar, a
+                musculação pode ser uma ótima alternativa para aliviar o estresse, diminuir os sintomas de ansiedade
+                e,
+                até mesmo, combater a depressão.</p>
+            <h2>5. Aumenta a densidade óssea</h2>
+            <p>A musculação aumenta a densidade óssea, ou seja, torna os ossos mais resistentes, diminuindo as
+                chances
+                de fraturas e desenvolvimento da osteoporose, que é comum em pessoas mais idosas e mulheres na
+                menopausa. No entanto, para que os ossos fiquem realmente fortalecidos, é preciso que a musculação
+                seja
+                acompanhada de uma alimentação saudável, equilibrada e composta por alimentos ricos em cálcio e
+                vitamina
+                D. Veja quais são os alimentos ricos em vitamina D.</p>
+            <h2>6. Diminui o risco de diabetes</h2>
+            <p>O risco de diabetes pode ser diminuído com a prática da musculação porque o organismo passa utilizar
+                a
+                glicose circulante como fonte de energia e o açúcar que se encontra em excesso no sangue passa a ser
+                armazenado na forma de glicogênio, que é utilizado em outros processos metabólicos, por exemplo.</p>
+            <h2>7. Melhora o condicionamento cardiorrespiratório</h2>
+            <p>Quanto mais intensa foi a musculação, maior é o trabalho do coração, garantindo maior condicionamento
+                cardíaco e respiratório. Assim, há regulação da pressão arterial e, consequentemente, diminuição dos
+                riscos de doenças cardíacas, como a aterosclerose, por exemplo.</p>
+
+            <p id="fontes"><a href="https://www.tuasaude.com/beneficios-da-musculacao/" target="_blank">Fonte:
+                    https://www.tuasaude.com/beneficios-da-musculacao/</a></p>
+
+    </div>
+
+    <section id="video">
+        <div class="titulo">
+            <h2>Vídeos sobre musculação</h2>
+        </div>
+        <div class="container">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j-zjx_GPL6g"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/72Rg_29zESs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/No6n6r5INkU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+            <footer id="rodape">
+                <div>
+                    <p>Site construído na aula da disciplina de Introdução à Tecnologia Web do 1º período do curso
+                        de Sistema de Informação do UniRios</p>
+                    <p><a href="http://www.unirios.edu.br" target="_blank">UniRios - Centro Universitário do Rio São Francisco</a>
+                    </p>
+                </div>
+            </footer>
+
+</html>

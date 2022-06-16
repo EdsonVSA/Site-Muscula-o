@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calistenia</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+    <title>Calistenia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/icons/icon_short.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                // captions: true,
+                //slidWidht: 800,
+                auto: true,
+                pager: true,
+                // speed: 100,
+                // controls: true,
+            });
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="imagem-topo">
+        <img src="../imagens/logo_physical_fitness.png" id="logo">
+    </div>
+    <header id="cabecalho">
+        <nav id="menu">
+            <ul>
+                <li><img src="../imagens/icons/icon_home.png"><a href="../index.html" class="">INÍCIO</a></img></li>
+                <!-- /* _parent: abre a página na mesma janela do link; */ -->
+
+                <li><img src="../imagens/icons/icon_calistenia.png"><a href="#" class="" target="_parent">Calistenia</a>
+                </li>
+
+                <li><img src="../imagens/icons/icon_crossfit.png"><a href="../internas/crossfit.html" class=""
+                        target="_parent">Crossfit</a></li>
+
+                <li><img src="../imagens/icons/icon_treinos.png"><a href="../internas/treinos.html" class=""
+                        target="_parent">Treinos</a></li>
+
+                <li> <img src="../imagens/icons/icon_alimentacao.png"><a href="../internas/alimentacao.html" class=""
+                        target="_parent">Alimentação</a></li>
+
+                <li><img src="../imagens/icons/icon_contato.png"><a href="../internas/faleconosco.html" class=""
+                        target="_parent">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="fundo-preto">
+        <section id="banners">
+            <div class="container">
+                <ul class="slider">
+                    <li><img src="../imagens/banners/banner_calistenia/banner1_calistenia.jpg"></li>
+                    <li><img src="../imagens/banners/banner_calistenia/banner2_calistenia.jpg"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="conteudo">
+            <h2>Calistenia: o que é, benefícios e rotina de exercícios</h2>
+            <p>A calistenia é um tipo de treinamento que tem como objetivo trabalhar a força e resistência muscular, não
+                sendo necessário usar equipamentos de academia, até porque um dos princípios da calistenia é o uso do
+                próprio corpo para aumentar a massa muscular.
+
+                Além de aumentar a força, resistência e consciência corporal, a calistenia aumenta a flexibilidade e a
+                mobilidade. Por isso, as técnicas da calistenia são incorporadas em algumas modalidades esportivas, como
+                crossfit, treinamento funcional e ginástica, principalmente.
+
+                É importante que os exercícios de calistenia seja feito sob orientação de um instrutor capacitado para
+                que se tenha a garantia de que as técnicas estão sendo realizadas corretamente, exista menor risco de
+                lesões e seja possível alcançar a maior quantidade de benefícios possível.</p>
+
+            <h2>Benefícios da calistenia</h2>
+            <p>A calistenia pode ser praticada por qualquer pessoa desde que devidamente acompanhada por um profissional
+                de educação física, pois possui diversos benefícios para a saúde, como por exemplo:
+
+                Aumento da flexibilidade e da mobilidade articular;
+                Aumento da resistência e força muscular;
+                Maior consciência corporal;
+                Aumento da massa muscular;
+                Ativação do metabolismo;
+                Aumento do gasto energético e diminuição do percentual de gordura;
+                Desenvolvimento da coordenação motora;
+                Melhor equilíbrio corporal.
+                Além disso, como a calistenia não necessita de equipamentos de academia para ser praticada, esse tipo de
+                atividade pode ser realizada em qualquer ambiente, o que faz com que não seja uma atividade monótona.
+            </p>
+
+            <h2>Rotina de calistenia para iniciantes</h2>
+            <p>Esta rotina de exercícios ajuda a trabalhar todo o corpo, estimulando os músculos das pernas, abdômen,
+                braços, costas e peito, e foi criado para quem se está iniciando neste tipo de treino, pois requer um
+                nível menor de força, agilidade e flexibilidade.
+
+                É recomendado repetir esta rotina até 3 vezes, descansando 4 minutos entre cada uma e 30 segundos a 1
+                minuto entre cada exercício.</p>
+
+            <h2>1. Sentar contra a parede</h2>
+            <p>Para fazer este exercício, ficar de pé encostado em uma parede, e depois colocar os dois pés cerca de 60
+                cm mais à frente, sem retirar as costas e o bumbum da parede. Nessa posição, deslizar o bumbum pela
+                parede até que os joelhos fiquem em 90º. Mantenha a posição por cerca de 30 segundos.
+
+                Este exercício é semelhante ao agachamento, trabalhando principalmente os músculos dos glúteos e das
+                coxas, mas sem causar desgaste do joelho, sendo por isso, uma boa opção para quem tem lesões nesta
+                articulação.</p>
+
+            <h2>2. Puxada alta</h2>
+            <p>Para este exercício é necessário uma barra alta e, por isso, uma boa opção é fazer o exercício na praça,
+                utilizando as barras. Para fazer o exercício, deve agarrar a barra, colocando as mãos ligeiramente mais
+                afastadas que a largura dos ombros. A seguir, puxe o corpo para cima até que a barra chegue perto do
+                queixo. Desça e suba entre 3 a 5 vezes.
+
+                Este tipo de exercício na barra, além de trabalhar os músculos dos braços é excelente para tonificar os
+                músculos das costas, ajudando a alargar os ombros, por exemplo.</p>
+
+            <h2>3. Agachamentos</h2>
+            <p>O agachamento é um tipo de exercício clássico, mas que é ótimo para trabalhar quase todos os músculos das
+                pernas e os glúteos. Para fazer corretamente deve-se ficar de pé com os pés à largura do ombros, depois
+                agachar com o bumbum para trás e as costas retas, até que os joelhos fiquem a 90º. Deve-se repetir este
+                exercício 8 a 12 vezes em cada rotina.</p>
+
+            <h2>4. Fundos de tríceps</h2>
+            <p>Para começar, apoiar as duas mãos numa cadeira, depois, dobrar ligeiramente as pernas em frente ao corpo,
+                juntar os pés e apontá-los para cima. A seguir, descer o corpo até que os cotovelos fiquem em um ângulo
+                de 90º, e voltar a subir. Idealmente, as duas mãos devem ser apoiadas à distância dos glúteos.</p>
+
+            <h2>5. Flexão de braços</h2>
+            <p>Faça flexões, mantendo os braços afastados à largura dos ombros e descendo o corpo até que os cotovelos
+                fiquem em um ângulo de 90º. Durante todo o exercício é muito importante manter o abdominal bem
+                contraído, para manter o corpo completamente reto e evitar lesões nas costas.
+
+                Este exercício é ótimo para fortalecer os braços e as costas, assim como o peitoral.</p>
+
+            <h2>6. Abdominal na barra</h2>
+            <p>Este exercício é mais complexo e de dificuldade aumentada em relação ao abdominal clássico. Por isso,
+                antes de avançar para o abdominal na barra, uma opção é fazer o abdominal clássico no chão até que se
+                tenha força suficiente para realizar os mesmos movimentos na barra.
+
+                Agarrando na barra, como na puxada alta, puxar os joelhos para cima dobrando-os até tocar no peito ou
+                até que fiquem em um ângulo de 90º. Repetir 8 a 10 vezes. Uma forma de aumentar a dificuldade é manter
+                as pernas retas e puxar para cima, sem dobrar os joelhos, até formar um ângulo de 90º com o bumbum.</p>
+
+            <p id="fontes"><a href="https://www.tuasaude.com/calistenia/" target="_blank">Fonte:
+                    https://www.tuasaude.com/calistenia/</a></p>
+        </section>
+    </div>
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao">Calistenia</h2>
+            <div id="galeria-fotos">
+                <a href="../imagens/fotos/fotosg_calistenia/fotog_1calistenia.jpg"><img
+                        src="../imagens/fotos/fotosp_calistenia/fotop_1calistenia.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg_calistenia/fotog_2calistenia.jpg"><img
+                        src="../imagens/fotos/fotosp_calistenia/fotop_2calistenia.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg_calistenia/fotog_3calistenia.jpg"><img
+                        src="../imagens/fotos/fotosp_calistenia/fotop_3calistenia.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg_calistenia/fotog_4calistenia.jpg"><img
+                        src="../imagens/fotos/fotosp_calistenia/fotop_4calistenia.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+                <footer id="rodape">
+                    <div>
+                        <p>Site construído na aula da disciplina de Introdução à Tecnologia Web do 1º período do curso
+                            de Sistema de Informação do UniRios</p>
+                        <p><a href="http://www.unirios.edu.br" target="_blank">UniRios - Centro Universitário do Rio São Francisco</a>
+                        </p>
+                    </div>
+                </footer>
+
+</html>

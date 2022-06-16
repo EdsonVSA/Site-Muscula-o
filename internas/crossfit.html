@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossfit</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+    <title>Crossfit</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/icons/icon_short.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                // captions: true,
+                //slidWidht: 800,
+                auto: true,
+                pager: true,
+                // speed: 100,
+                // controls: true,
+            });
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="imagem-topo">
+        <img src="../imagens/logo_physical_fitness.png" id="logo">
+    </div>
+    <header id="cabecalho">
+        <nav id="menu">
+            <li><img src="../imagens/icons/icon_home.png"><a href="../index.html" class="">INÍCIO</a></img></li>
+            <!-- /* _parent: abre a página na mesma janela do link; */ -->
+
+            <li><img src="../imagens/icons/icon_calistenia.png"><a href="../internas/calistenia.html" class=""
+                    target="_parent">Calistenia</a></li>
+
+            <li><img src="../imagens/icons/icon_crossfit.png"><a href="#" class="" target="_parent">Crossfit</a></li>
+
+            <li><img src="../imagens/icons/icon_treinos.png"><a href="../internas/treinos.html" class=""
+                    target="_parent">Treinos</a></li>
+
+            <li> <img src="../imagens/icons/icon_alimentacao.png"><a href="../internas/alimentacao.html" class=""
+                    target="_parent">Alimentação</a></li>
+
+            <li><img src="../imagens/icons/icon_contato.png"><a href="../internas/faleconosco.html" class=""
+                    target="_parent">Fale Conosco</a></li>
+        </nav>
+    </header>
+    <div id="fundo-preto">
+        <section id="banners">
+            <div class="container">
+                <ul class="slider">
+                    <li><img src="../imagens/banners/banner_crossfit/banner1_crossfit.jpg"></li>
+                    <li><img src="../imagens/banners/banner_crossfit/banner2_crossfit.jpg"></li>
+                    <li><img src="../imagens/banners/banner_crossfit/banner3_crossfit.jpg"></li>
+                    <li><img src="../imagens/banners/banner_crossfit/banner4_crossfit.jpg"></li>
+                    <li><img src="../imagens/banners/banner_crossfit/banner5_crossfit.jpg"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="conteudo">
+            <h2>Crossfit: o que é, benefícios e como praticar</h2>
+            <p>O crossfit é uma modalidade esportiva que tem como objetivo promover melhora da capacidade
+                cardiorrespiratória, condicionamento físico e resistência muscular por meio da combinação de exercícios
+                funcionais, que são aqueles cujos movimentos são realizados no dia a dia, e aeróbicos, que são
+                realizados em alta intensidade, trazendo diversos benefícios para a saúde.</p>
+            <p>Como os movimentos são variados e realizados em alta intensidade, a prática de crossfit promove melhora
+                do
+                condicionamento físico, ganho de massa muscular e garante mais força, resistência e definição muscular,
+                além
+                de também promover a saúde do corpo e da mente, já que há constante produção e liberação de hormônios
+                relacionados à sensação de bem-estar.</p>
+
+            <p>É importante que o crossfit seja realizado sob orientação de um profissional devidamente qualificado,
+                pois
+                assim é possível que sejam percebidas as limitações do praticante de modo a evitar movimentações erradas
+                e
+                que possam resultar em lesões. Além disso, como se trata de um exame de alta intensidade, é importante
+                que
+                seja realizada uma avaliação médica antes de iniciar a prática para que seja avaliado o estado geral de
+                saúde da pessoa e, assim, possa ser verificado se a pessoa está apta ou não para praticar o crossfit.
+            </p>
+            <h2>Benefícios do Crossfit</h2>
+            <p>Os benefícios do crossfit são devido aos exercícios realizados em alta intensidade sob orientação de um
+                instrutor de crossfit qualificado, sendo os principais:</p>
+            <p>Melhora do condicionamento físico;</p>
+            <p>Maior capacidade cardiorrespiratória;</p>
+            <p>Diminuição do estresse e/ou ansiedade, promovendo sensação de bem-estar e aumento da auto-estima;</p>
+            <p>Fortalecimento e resistência muscular;</p>
+            <p>Tonificação dos músculos,</p>
+            <p>Ganho de massa magra e perda de gordura;</p>
+            <p>Previne lesões devido ao aumento da massa muscular;</p>
+            <p>Estimula o espírito de equipe, já que os treinos são realizados em grupo, permitindo o estímulo e
+                incentivo entre as pessoas que realizam o mesmo treino.</p>
+            <p>Apesar de possuir diversos benefícios para a saúde, é importante o treino ser realizado seguindo as
+                indicações do instrutor de crossfit. Isso porque quando os movimentos são realizados sem orientação de
+                instrutor, de forma errada ou com uma carga não apropriada para a pessoa, pode haver lesões musculares,
+                uma vez que o músculo não é estimulado corretamente de modo a prevenir as lesões, além de poder haver
+                comprometimento das articulações.</p>
+            <p>Além disso, alguns estudos demonstram que a prática inadequada de crossfit pode levar à rabdomiólise, que
+                é caracterizada pela destruição das fibras musculares, havendo dor muscular, falta de força e
+                dificuldade para movimentar as pernas ou braços, por exemplo.</p>
+            <h2>Como fazer o treino de Crossfit</h2>
+            <p>O crossfit pode ser praticado por todas as pessoas, independentemente da idade e do condicionamento
+                físico, no entanto é importante que antes de iniciar a prática sejam realizados exames médicos para
+                verificar se a pessoa possui alguma contraindicação.</p>
+            <p>Os exercícios do crossfit são realizados de forma progressiva, ou seja pessoas sedentárias e pessoas
+                fisicamente ativas mas que nunca praticaram o crossfit iniciam os exercícios com pouca ou nenhuma carga
+                com
+                o objetivo de promover a adaptação do corpo ao movimento e evitar lesões musculares. À medida que os
+                treinos
+                são realizados e os movimentos aperfeiçoados, é acrescentada mais carga com o objetivo de deixar o
+                treino
+                mais intenso e garantir mais benefícios.</p>
+
+            <p>Os treinos de crossfit duram em média 1 hora e normalmente são divididos em três partes:</p>
+
+            <p>Aquecimento, que corresponde à parte inicial do treino e que tem como objetivo aquecer os músculos e
+                prepará-los para o treino que será realizado, prevenindo a ocorrência de lesões.</p>
+            <p>Alongamento dinâmico ou técnica, em que a movimentação de alguns exercícios são aperfeiçoados, sendo esse
+                o
+                momento em que deve haver a experimentação de cargas de modo a não haver comprometimento da técnica;</p>
+            <p>Workout of the day, popularmente conhecido como WOD, em que são realizados os exercícios anteriormente
+                trabalhados, porém em uma intensidade maior e em um tempo pré-estabelecido. Esse é o momento em que a
+                intensidade do treino é maior e que permite mais benefícios, pois o objetivo é realizar o treino
+                determinado
+                pelo instrutor, que consiste em várias séries dos exercícios realizados no momento da técnica, no menor
+                tempo possível e com pouco ou nenhum intervalo entre os exercícios.</p>
+            <p>É importante que o treino de crossfit seja realizado sob orientação de um instrutor certificado para que
+                os
+                movimentos sejam realizados corretamente e na intensidade adequada para cada pessoa, evitando lesões
+                musculares e/ ou articulares. Além disso, para ter o máximo de benefícios, é importante que a
+                alimentação
+                seja adequada ao tipo de atividade física realizada e gasto calórico, sendo recomendado que o plano
+                alimentar seja feito por um nutricionista de acordo com as necessidades nutricionais da pessoa.</p>
+
+            <p id="fontes"><a href="https://www.tuasaude.com/crossfit/" target="_blank">Fonte:
+                    https://www.tuasaude.com/crossfit/</a></p>
+        </section>
+    </div>
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao">CrossFit</h2>
+            <div id="galeria-fotos">
+                <a href="../imagens/fotos/fotosg_crossfit/fotog_1crossfit.jpg"><img
+                        src="../imagens/fotos/fotosp_crossfit/fotop_1crossfit.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg_crossfit/fotog_2crossfit.jpg"><img
+                        src="../imagens/fotos/fotosp_crossfit/fotop_2crossfit.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg_crossfit/fotog_3crossfit.jpg"><img
+                        src="../imagens/fotos/fotosp_crossfit/fotop_3crossfit.jpg" alt=""></a>
+                <a href="../imagens/fotos/fotosg_crossfit/fotog_4crossfit.jpg"><img
+                        src="../imagens/fotos/fotosp_crossfit/fotop_4crossfit.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+                <footer id="rodape">
+                    <div>
+                        <p>Site construído na aula da disciplina de Introdução à Tecnologia Web do 1º período do curso
+                            de Sistema de Informação do UniRios</p>
+                        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+                    </div>
+                </footer>
+
+</html>

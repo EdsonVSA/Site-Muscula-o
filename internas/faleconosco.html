@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/icons/icon_short.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="imagem-topo">
+        <img src="../imagens/logo_physical_fitness.png" id="logo">
+    </div>
+    <header id="cabecalho">
+        <nav id="menu">
+            <li><img src="../imagens/icons/icon_home.png"><a href="../index.html" class="">INÍCIO</a></img></li>
+            <!-- /* _parent: abre a página na mesma janela do link; */ -->
+
+            <li><img src="../imagens/icons/icon_calistenia.png"><a href="../internas/calistenia.html" class=""
+                    target="_parent">Calistenia</a></li>
+
+            <li><img src="../imagens/icons/icon_crossfit.png"><a href="../internas/crossfit.html" class=""
+                    target="_parent">Crossfit</a></li>
+
+            <li><img src="../imagens/icons/icon_treinos.png"><a href="../internas/treinos.html" class=""
+                    target="_parent">Treinos</a></li>
+
+            <li> <img src="../imagens/icons/icon_alimentacao.png"><a href="../internas/alimentacao.html" class=""
+                    target="_parent">Alimentação</a></li>
+
+            <li><img src="../imagens/icons/icon_contato.png"><a href="#" class="" target="_parent">Fale Conosco</a></li>
+        </nav>
+    </header>
+
+    <h2 id="titulo-form" style="color: white;">Fale Conosco</h2>
+
+    <form id="formulario">
+        <fieldset>
+
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div>
+                <label>E-mail:</label>
+                <input input="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="tipo_aluno">Eu sou:</label>
+                <label>
+                    <input type="radio" name="tipo:" value="iniciante" id="tipo_iniciante" required>
+                    <label for="tipo_iniciante">Iniciante</label>
+                    <label>
+                        <input type="radio" name="tipo:" value="intermediario" id="tipo_intermediario" required>
+                        <label for="tipo_intermediario">Intermediário</label>
+                        <label>
+                            <input type="radio" name="tipo:" value="avancado" id="tipo_avancado" required>
+                            <label for="tipo_avancado">Avançado</label>
+            </div>
+
+            <div>
+                <label class="" for="area">Eu sou profissional da área:</label>
+                <select name="area" id="area" required>
+                    <option selected disabled value="">Escolha a área</option>
+
+                    <option value="adm">Educação Física</option>
+                    <option value="bio">Nutrição</option>
+                    <option value="dir">Coach</option>
+                    <option value="enf">Personal Trainer</option>
+                    <option value="far">Nenhuma</option>
+                </select>
+            </div>
+            <div>
+                <label for="data_nasc">Data de nascimento</label>
+                <input type="date" name="data_nasc" id="data_nasc" required>
+            </div>
+            <div id="div-interesse">
+                <label for="interesse" id="interesse">Interesses:</label>
+
+                <input type="checkbox" name="calistenia" id="calistenia">
+                <label class="" for="calistenia">Calistenia</label>
+
+                <input type="checkbox" name="crossfit" id="crossfit">
+                <label class="" for="crossfit">Crossfit</label>
+
+                <input type="checkbox" name="treinos" id="treinos">
+                <label class="" for="treinos">Treinos</label>
+
+                <input type="checkbox" name="alimentacao" id="alimentacao">
+                <label class="" for="alimentacao">Alimentação</label>
+
+            </div>
+            <div>
+                <label for="mensagem">Mensagens</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" id="but">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
